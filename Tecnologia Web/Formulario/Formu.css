@@ -1,0 +1,197 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #00796b;
+    margin-top: 20px;
+    border-bottom: 3px solid #00796b;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #00796b;
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.5);
+    outline: none;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+} 
+
+
+/* Estilo global para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif; /* Define la tipografía de la página */
+    background: url('1.jpg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada */
+    background-size: cover; /* Asegura que la imagen cubra toda el área disponible */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 20px; /* Aplica un padding de 20px alrededor del contenido */
+    color: #333; /* Define un color de texto oscuro */
+}
+
+/* Estilo para el formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia para el formulario */
+    padding: 40px; /* Aplica 40px de padding dentro del formulario */
+    border-radius: 20px; /* Bordes redondeados para el formulario */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor del formulario */
+    max-width: 600px; /* Establece el ancho máximo del formulario */
+    margin: auto; /* Centra el formulario horizontalmente */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animaciones para el movimiento y cambio de sombra */
+}
+
+/* Efecto al pasar el ratón sobre el formulario */
+form:hover {
+    transform: translateY(-5px); /* Mueve ligeramente el formulario hacia arriba */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25); /* Aumenta la sombra para dar un efecto de profundidad */
+}
+
+/* Estilo para el título principal */
+h1 {
+    color: #00796b; /* Color verde para el texto */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    font-size: 2.5em; /* Aumenta el tamaño de la fuente */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Agrega sombra al texto para dar un efecto sutil */
+}
+
+/* Estilo para los subtítulos de las secciones */
+h2 {
+    color: #00796b; /* Color verde para los subtítulos */
+    margin-top: 20px; /* Margen superior de 20px */
+    border-bottom: 3px solid #00796b; /* Línea debajo del subtítulo */
+    padding-bottom: 10px; /* Espacio inferior para el subtítulo */
+    font-size: 1.8em; /* Tamaño de fuente más pequeño que el título principal */
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    display: block; /* Hace que cada etiqueta ocupe toda la línea */
+    margin: 15px 0 5px; /* Margen superior e inferior para separar las etiquetas de los campos */
+    font-weight: bold; /* Pone las etiquetas en negrita */
+    color: #555; /* Color de texto gris oscuro para las etiquetas */
+}
+
+/* Estilo común para los campos de entrada, selección y área de texto */
+input, select, textarea {
+    width: 100%; /* Hace que los campos ocupen todo el ancho disponible */
+    padding: 15px; /* Aplica un padding de 15px dentro de los campos */
+    margin-bottom: 15px; /* Margen inferior para separar los campos */
+    border: 2px solid #ccc; /* Bordes grises claros alrededor de los campos */
+    border-radius: 10px; /* Bordes redondeados en los campos */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho del campo */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Efectos de transición cuando el campo es seleccionado */
+}
+
+/* Efectos al enfocar (hacer clic) en los campos */
+input:focus, select:focus, textarea:focus {
+    border-color: #00796b; /* Cambia el color del borde a verde cuando se selecciona el campo */
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.5); /* Agrega una sombra verde clara alrededor del campo */
+    outline: none; /* Elimina el borde predeterminado del navegador cuando el campo está en foco */
+}
+
+/* Estilo para el botón de envío */
+button {
+    background-color: #00796b; /* Color de fondo verde para el botón */
+    color: white; /* Texto blanco en el botón */
+    padding: 15px; /* Padding dentro del botón */
+    border: none; /* Elimina los bordes predeterminados */
+    border-radius: 10px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Muestra un cursor de mano al pasar sobre el botón */
+    font-size: 18px; /* Tamaño de la fuente más grande */
+    width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones de color y escalado al interactuar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera debajo del botón */
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+button:hover {
+    background-color: #004d40; /* Cambia el color del fondo a un verde más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón al pasar el ratón */
+}
+
+/* Estilo para el área de texto para permitir redimensionamiento vertical */
+textarea {
+    resize: vertical; /* Permite que el área de texto sea redimensionable solo en dirección vertical */
+}
+
+/* Estilo para los mensajes de error */
+.error {
+    color: red; /* Texto rojo para los mensajes de error */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño para los mensajes de error */
+    margin-top: -10px; /* Sutilmente mueve hacia arriba el mensaje de error */
+    margin-bottom: 10px; /* Margen inferior para separar el mensaje de error del contenido siguiente */
+}

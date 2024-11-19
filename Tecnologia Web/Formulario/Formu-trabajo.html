@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Veterinaria</title>
+    <link rel="stylesheet" href="Formu.css"> 
+</head>
+<body>
+
+<h1>Formulario de Cita Veterinaria</h1>
+<form action="#" method="POST"> 
+    <h2>Información del Propietario</h2>
+    <label for="nombrePropietario">Nombre:</label>
+    <input type="text" id="nombrePropietario" name="nombrePropietario" required placeholder="Ingrese su nombre">
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese su teléfono">
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
+
+    <h2>Información de la Mascota</h2>
+    <label for="nombreMascota">Nombre de la Mascota:</label>
+    <input type="text" id="nombreMascota" name="nombreMascota" required placeholder="Ingrese el nombre de la mascota">
+
+    <label for="tipoMascota">Tipo de Mascota:</label>
+    <select id="tipoMascota" name="tipoMascota" required>
+        <option value="">Seleccione...</option>
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+        <option value="otro">Otro</option>
+    </select>
+    <label for="T.Mascota">Tamaño mascota:</label>
+    <select id="T.Mascota" name="T.Mascota" required>
+        <option value="">Seleccione...</option>
+        <option value="perro">Pequeño</option>
+        <option value="gato">Mediano</option>
+        <option value="otro">Grande</option>
+    </select>
+
+    <label for="otro">Si seleccion otro:</label>
+    <input type="text" id="animal" name="animal" placeholder="Ej. Conejo, loro etc">
+
+    <label for="raza">Raza:</label>
+    <input type="text" id="raza" name="raza" placeholder="Ej. Labrador">
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="0" placeholder="Ingrese la edad en años">
+
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" name="peso" min="0" step="0.1" placeholder="Ingrese el peso en kg">
+
+    <label for="motivoVisita">Motivo de la Visita:</label>
+    <textarea id="motivoVisita" name="motivoVisita" rows="4" required placeholder="Describa el motivo de la visita"></textarea>
+
+    <label for="historiaMedica">Historia Médica (enfermedades previas, cirugías):</label>
+    <textarea id="historiaMedica" name="historiaMedica" rows="4" placeholder="Ingrese la historia médica"></textarea>
+
+    <label for="vacunas">Vacunas Administradas (indique las fechas):</label>
+    <textarea id="vacunas" name="vacunas" rows="4" placeholder="Indique las vacunas y fechas"></textarea>
+
+    <label for="alergias">Alergias Conocidas:</label>
+    <textarea id="alergias" name="alergias" rows="2" placeholder="Indique las alergias"></textarea>
+
+    <label for="comportamiento">Comportamiento de la Mascota (agresivo, tímido, etc.):</label>
+    <textarea id="comportamiento" name="comportamiento" rows="2" placeholder="Describa el comportamiento"></textarea>
+
+    <label for="dieta">Dieta Actual (tipo de alimento, frecuencia):</label>
+    <textarea id="dieta" name="dieta" rows="2" placeholder="Describa la dieta actual"></textarea>
+
+    <label for="ejercicio">Hábitos de Ejercicio (frecuencia, tipo de actividad):</label>
+    <textarea id="ejercicio" name="ejercicio" rows="2" placeholder="Describa los hábitos de ejercicio"></textarea>
+
+    <label for="sintomas">Síntomas Actuales (si los hay):</label>
+    <textarea id="sintomas" name="sintomas" rows="4" placeholder="Describa los síntomas actuales"></textarea>
+
+    <label for="fechaVisita">Fecha Preferida para la Visita:</label>
+    <input type="date" id="fechaVisita" name="fechaVisita" required>
+
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html
+
